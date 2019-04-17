@@ -1,5 +1,5 @@
 #!/bin/bash
-mumu_ascii() { 
+mumu() { 
   local -r key="${1?usage: mumu key [seed] [fmt]}" len=${#1} mask=$((0xffffffff)) 
   local h=$(( ${2:-0} )) i=0 k 
   while (( i < len )); do
