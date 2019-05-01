@@ -8,8 +8,9 @@ As string length increases, the bash implementation exhibits quadratic runtime g
 ```
                               bash-utf8   bash-ascii            C
 20000 hashes, English words        1.86         1.58 *      19.17
-   1 hash, 10KB UTF8 string        1.63         0.77         0.005 *
-   1 hash, 20KB UTF8 string        6.31         3.02         0.01 *
+       1 hash,  1KB of UTF8        0.020        0.009        0.002 *        
+       1 hash, 10KB of UTF8        1.63         0.77         0.005 *
+       1 hash, 20KB of UTF8        6.31         3.02         0.010 *
 ```
 
 **Usage**
