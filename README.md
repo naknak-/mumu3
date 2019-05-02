@@ -4,7 +4,7 @@ For short strings, bash can be 10 times faster than a C implementation, because 
 
 As string length increases, the bash implementation exhibits quadratic runtime growth.  This is because indexing strings in bash is linear in the size of the index.
 
-**Benchmarks** (seconds, lower is better):
+**Benchmarks** (seconds, lower is better; `*` = best):
 ```
                               bash-utf8   bash-ascii            C
 20000 hashes, ASCII words       1.86         1.58 *      19.17
