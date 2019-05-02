@@ -6,12 +6,12 @@ As string length increases, the bash implementation exhibits quadratic runtime g
 
 **Benchmarks** (seconds, lower is better; `*` = best):
 ```
-                              bash-utf8   bash-ascii            C
-20000 hashes, ASCII words       1.86         1.58 *      19.17
-1000 hashes x 100 bytes UTF8    1.01         0.36 *       0.91
-    1 hash,  1KB of UTF8        0.020        0.009        0.002 *        
-    1 hash, 10KB of UTF8        1.63         0.77         0.005 *
-    1 hash, 20KB of UTF8        6.31         3.02         0.010 *
+                                bash-utf8    bash-ascii       C
+  20000 hashes, ASCII words        1.86         1.58 *      19.17
+1000 hashes, 100 bytes UTF8        1.01         0.36 *       0.91
+         1 hash,  1KB  UTF8        0.020        0.009        0.002 *        
+         1 hash, 10KB  UTF8        1.63         0.77         0.005 *
+         1 hash, 20KB  UTF8        6.31         3.02         0.010 *
 ```
 
 **Usage**
