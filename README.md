@@ -2,7 +2,7 @@ This code implements [MurmurHash3](https://github.com/aappleby/smhasher/wiki/Mur
 
 For short strings, bash can be 10 times faster than a C implementation, because there is no executable overhead.
 
-As string length increases, the bash implementation exhibits quadratic runtime growth.  This is because indexing strings in bash is linear in the size of the index.
+As string length increases, the bash implementation exhibits a quadratic increase in runtime.  This is because indexing strings in bash is linear in the size of the index.
 
 **Benchmarks** (seconds, lower is better; `*` = best):
 ```
